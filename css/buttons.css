@@ -1,0 +1,31 @@
+.button{ /*propiedades por clase */
+    inline-size: 32px;
+    block-size: 32px;
+    border: none ;
+    background-color: unset; /*fondo de la imagen de fondo*/
+    background-repeat: no-repeat; /*para que no se repita aunque se haga mas grande la imagen */
+    background-position: center; /*centrar la imagen */
+    cursor: pointer; /*mostrar el cursor dentro del boton */
+}
+
+.button:active{
+    transform: scale(.9); 
+    /*background-color: DarkBlue; background y sombra mas oscura al estar activo
+    box-shadow: 0 0 0 2px white, 0 0 0 4px DarkBlue;*/
+}
+
+#play{/*propiedades por identificador */
+    background-image: url(../images/play.svg); /*imagen para boton (../para salir una carpeta atras) */
+}
+
+#pausa{
+    background-image: url(../images/pause.svg);
+}
+
+#forward{
+    background-image: url(../images/+10.svg);
+}
+
+#backward{
+    background-image: url(../images/-10.svg);
+}
